@@ -15,7 +15,7 @@ Dans cet exercice, nous allons développer une API qui permet à l'utilisateur d
 
 Le but de ce projet est de créer une API qui permet :
 
-- À l'utilisateur de télécharger un fichier CSV contenant une série de données.
+- À l'utilisateur de téléverser un fichier CSV ou Excel contenant une série de données.
 - À l'API de traiter ces données et de retourner les résultats sous forme de fichier JSON.
 - De déployer cette API sur AWS (ou une plateforme similaire) pour une accessibilité globale.
 
