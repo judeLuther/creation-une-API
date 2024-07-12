@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html style="display: table; margin: auto;">
+<head>
+    <title>Résultats</title>
+</head>
+<body style="height: 100%; display: table-cell; vertical-align: middle;">
+    <h1>Résultats</h1>
+
+    <!-- <p>Dans le cas de la génération d'un fichier JSON avec Flask, </br> 
+        génération elle-même peut être relativement rapide, en particulier </br> 
+        pour des fichiers de taille modérée. Cependant, si le fichier JSON </br> 
+         est très volumineux ou si les opérations de génération sont complexes, </br> 
+         cela peut prendre plus de temps.</p>
+
+    <p style="color: brown;">Un "mauvais fichier CSV" fait référence à un fichier CSV qui ne </br>
+        respecte pas la structure ou le format attendu d'un fichier CSV valide.</br>
+        Certaines données peuvent être perdues lors de la conversion en JSON.</br>
+        Les erreurs de formatage telles que des colonnes manquantes, </br>
+        des valeurs mal alignées ou des caractères spéciaux peuvent </br>
+        entraîner des données manquantes ou incorrectes dans le fichier JSON résultant.</p> -->
+
+    <!-- {% if result %}
+        <h2 id="greeting">Commencer la génération</h2>
+        <a id="generate-link" href="{{ url_for('main.download', attachment_id=1) }}">Généner un fichier JSON</a>
+    {% endif %} -->
+
+    {% if attachment_id %}
+    <h2 id="greeting">Enfin prêt!</h2>
+    <a id="generate-link" href="{{ url_for('main.download') }}">Download your JSON</a>
+
+    <p>Or copy the link: jude-json-diotsiaci.eu-north-1.elasticbeanstalk.com/leckomba-jude/api_json_generated/{{attachment_id}}/json/lojl</p>
+    
+    {% endif %}
+
+    <script>
+        document.getElementById("generate-link").addEventListener("click", function() {
+            // Cacher la balise <a>
+            this.style.display = "none";
+
+            // Modifier la balise <h1> en affichant "Bonjour"
+            document.getElementById("greeting").textContent = "En cours.......";
+        });
+    </script>
+    
+</body>
+</html>
