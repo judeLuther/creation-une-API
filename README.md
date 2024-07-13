@@ -1,6 +1,6 @@
 # Création d'une API
 
-Dans cet exercice, nous allons développer une API qui permet à l'utilisateur de soumettre un ensemble de données via un fichier CSV et de recevoir les résultats dans un fichier JSON. La maîtrise d'AWS/Azure et des frameworks comme Flask ou Django sera un avantage.
+Dans ce projet, nous allons développer une API qui permet à l'utilisateur de soumettre un ensemble de données via un fichier CSV et de recevoir les résultats dans un fichier JSON. La maîtrise d'AWS/Azure et des frameworks comme Flask ou Django sera un avantage.
 
 ## Table des matières
 
